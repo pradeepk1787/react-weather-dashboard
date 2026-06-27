@@ -1,16 +1,108 @@
-# React + Vite
+# React Weather Dashboard 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A weather application built with **React** and **Vite** as part of my React learning journey.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Search weather by city name
+* Display current location weather on app load
+* Fallback to Pune if location access is denied
+* Loading and error handling
+* Keyboard support (Press Enter to search)
+* Responsive and clean user interface
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* JavaScript (ES6+)
+* Vite
+* CSS3
+* Fetch API
+* Git & GitHub
 
-## Expanding the ESLint configuration
+## Concepts Practiced
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### React
+
+* useState
+* useEffect
+* Controlled Components
+* Event Handling
+* Conditional Rendering
+* State Management
+
+### JavaScript
+
+* Async/Await
+* Promises
+* try/catch/finally
+* Object Manipulation
+* Template Literals
+
+### APIs
+
+* HTTP GET Requests
+* JSON Parsing
+* Error Handling
+* Loading States
+* Geolocation API
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Learning Goals
+
+This project focuses on:
+
+* Building real-world React applications
+* Working with external APIs
+* Managing asynchronous operations
+* Implementing clean component architecture
+* Following industry development practices
+
+## Future Improvements
+
+* Environment variables (`.env`)
+* Weather icons
+* Responsive mobile design
+* Search history
+* Favorite cities
+* Deployment to GitHub Pages or Vercel
+
+---
+
+**Author:** Pradeep Kamble
+**Learning Path:** React Mastery Journey 🚀
