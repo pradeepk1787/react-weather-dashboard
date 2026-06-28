@@ -8,7 +8,7 @@ The application demonstrates data fetching from multiple APIs, geolocation suppo
 
 ## Live Demo
 
-Live Application: https://your-vercel-link.vercel.app
+Live Application: https://react-weather-dashboard-two-rho.vercel.app/
 
 GitHub Repository: https://github.com/pradeepk1787/react-weather-dashboard
 
