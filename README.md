@@ -16,7 +16,7 @@ GitHub Repository: https://github.com/pradeepk1787/react-weather-dashboard
 
 ## Screenshots
 
-### Home
+### Home - Permision to location access
 
 ![Home Screen Location Permission](./screenshots/home-location-permission.png)
 
