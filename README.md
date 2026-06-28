@@ -1,68 +1,78 @@
-# React Weather Dashboard 🌤️
+# 🌦️ React Weather Dashboard
 
-A weather application built with **React** and **Vite** as part of my React learning journey.
+A modern weather dashboard built with React that allows users to search weather information for any city and automatically loads weather for the current location on startup.
 
-## Features
+![React](https://img.shields.io/badge/React-19-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-* Search weather by city name
-* Display current location weather on app load
-* Fallback to Pune if location access is denied
-* Loading and error handling
-* Keyboard support (Press Enter to search)
-* Responsive and clean user interface
+---
 
-## Tech Stack
+## 🚀 Features
+
+* 🔍 Search weather by city name
+* 📍 Automatically fetch current location weather
+* 🏙️ Fallback to Mumbai if location access is denied
+* ⌨️ Press **Enter** to search
+* ⏳ Loading indicators during API requests
+* ❌ Graceful error handling
+* ♿ Basic accessibility support with ARIA labels
+* 🎨 Clean and responsive UI
+* 🌡️ Weather condition mapping (Rain, Snow, Thunderstorm, etc.)
+* 🔒 Prevents duplicate searches while loading
+
+---
+
+## 📸 Screenshots
+
+### Home Screen
+
+![Home Screen](./screenshots/home.png)
+
+### Search Result
+
+![Search Result](./screenshots/search-result.png)
+
+### Error State
+
+![Error State](./screenshots/error.png)
+
+---
+
+## 🛠️ Technologies Used
 
 * React
 * JavaScript (ES6+)
-* Vite
 * CSS3
-* Fetch API
-* Git & GitHub
+* Open-Meteo Weather API
+* Open-Meteo Geocoding API
+* Browser Geolocation API
 
-## Concepts Practiced
+---
 
-### React
-
-* useState
-* useEffect
-* Controlled Components
-* Event Handling
-* Conditional Rendering
-* State Management
-
-### JavaScript
-
-* Async/Await
-* Promises
-* try/catch/finally
-* Object Manipulation
-* Template Literals
-
-### APIs
-
-* HTTP GET Requests
-* JSON Parsing
-* Error Handling
-* Loading States
-* Geolocation API
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
 src/
-├── components/
-├── App.jsx
+├── Weather.jsx
 ├── App.css
 └── main.jsx
 ```
 
-## Getting Started
+---
+
+## ⚙️ Installation
 
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/pradeepk1787/react-weather-dashboard.git
+```
+
+Move into the project directory:
+
+```bash
+cd react-weather-dashboard
 ```
 
 Install dependencies:
@@ -77,30 +87,52 @@ Start the development server:
 npm run dev
 ```
 
-Build for production:
+Open:
 
-```bash
-npm run build
+```text
+http://localhost:5173
 ```
 
-## Learning Goals
+---
 
-This project focuses on:
+## 🧠 Concepts Practiced
 
-* Building real-world React applications
-* Working with external APIs
-* Managing asynchronous operations
-* Implementing clean component architecture
-* Following industry development practices
+This project helped practice:
 
-## Future Improvements
+* React state management with `useState`
+* Side effects with `useEffect`
+* Controlled components
+* Async/await
+* Fetch API
+* Error handling
+* Conditional rendering
+* Geolocation APIs
+* Data transformation
+* Separation of concerns
+* Single Responsibility Principle (SRP)
+* Basic accessibility principles
 
-* Environment variables (`.env`)
-* Weather icons
-* Responsive mobile design
-* Search history
-* Favorite cities
-* Deployment to GitHub Pages or Vercel
+---
+
+## 🔮 Future Improvements
+
+* Reverse geocoding to display actual city names instead of "Current Location"
+* 🔍 City autocomplete suggestions while typing
+* 5-day weather forecast
+* Weather icons based on weather conditions
+* Dark mode support
+* Recently searched cities using Local Storage
+* Custom `useWeather` hook
+* TypeScript migration
+* Unit and integration tests
+* Request cancellation using `AbortController`
+
+---
+
+## 📜 License
+
+This project is created for learning and portfolio purposes.
+
 
 ---
 

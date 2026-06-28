@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
 function Weather() {
+  //default city
+  const DEFAULT_CITY = "Mumbai";
+
   //State declarations
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
@@ -65,7 +68,7 @@ function Weather() {
   //get Current Location Weather
   const getCurrentLocationWeather = () => {
     if (!navigator.geolocation) {
-      fetchWeather("Mumbai");
+      fetchWeather(DEFAULT_CITY);
       return;
     }
 
@@ -83,13 +86,13 @@ function Weather() {
           setWeather(weatherData);
         } catch (error) {
           //Silent fallback
-          fetchWeather("Mumbai");
+          fetchWeather(DEFAULT_CITY);
         }
       },
 
       () => {
         // User denied permission
-        fetchWeather("Mumbai");
+        fetchWeather(DEFAULT_CITY);
       }
     );
   };
@@ -108,9 +111,21 @@ function Weather() {
         return "Overcast";
 
       case 61:
+      case 63:
+      case 65:
+      case 80:
+      case 81:
+      case 82:
         return "Rain";
 
+      case 71:
+      case 73:
+      case 75:
+        return "Snow";
+
       case 95:
+      case 96:
+      case 99:
         return "Thunderstorm";
 
       default:
@@ -173,8 +188,15 @@ function Weather() {
           value={city}
           onChange={handleCityChange}
           onKeyDown={handleKeyDown}
+          aria-label="Search city"
         />
-        <button onClick={handleSearch}>Search</button>
+        <button
+          onClick={handleSearch}
+          disabled={loading}
+          aria-label="Search weather"
+        >
+          {loading ? "Searching..." : "Search"}
+        </button>
       </div>
       {loading && <h2 className="loading">Loading...</h2>}
 
